@@ -1,0 +1,66 @@
+.InfraContainer {
+  background: url("../assets/bg-pattern-circles.svg"),
+    linear-gradient(var(--color-site-2-1), var(--color-site-2-2));
+  background-position: top -24rem left 50%, center;
+  background-size: 160% 110%, cover;
+  background-repeat: no-repeat, no-repeat;
+  border-top-right-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  padding: 2rem 2rem 12rem;
+  text-align: center;
+
+  &-ImgBox {
+    width: 100%;
+    height: 100%;
+    margin-top: -18rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-TxtBox-Title {
+    color: var(--color-brand-2);
+    font-size: 3.6rem;
+    line-height: 4.9rem;
+    font-family: var(--font-overpass);
+    margin-bottom: 2rem;
+  }
+
+  &-TxtBox-Para {
+    color: var(--color-brand-4);
+    line-height: 2.5rem;
+    font-family: var(--font-ubuntu);
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .InfraContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+    background: url("../assets/bg-pattern-circles.svg"),
+      linear-gradient(var(--color-site-2-1), var(--color-site-2-2));
+    background-position: top -22rem left -18rem, center;
+    background-size: 60% 150%, cover;
+    background-repeat: no-repeat, no-repeat;
+    text-align: left;
+    position: relative;
+    height: 36.5rem;
+
+    &-ImgBox {
+      margin-top: -8rem;
+    }
+
+    &-TxtBox-Title {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      margin-top: 10rem;
+    }
+  }
+}

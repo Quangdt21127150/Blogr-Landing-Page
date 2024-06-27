@@ -1,0 +1,48 @@
+.FeaturesContainer {
+  padding: 6rem 2rem;
+  text-align: center;
+
+  &-ImgBox {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-TxtBox-Title {
+    font-size: 2.8rem;
+    color: var(--color-brand-1);
+    font-family: var(--font-overpass);
+    margin-bottom: 2rem;
+  }
+
+  &-TxtBox-Para {
+    font-size: 1.6rem;
+    color: var(--color-brand-3);
+    line-height: 2.5rem;
+    font-family: var(--font-ubuntu);
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .FeaturesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 22rem;
+    text-align: left;
+    overflow: hidden;
+
+    &-ImgBox {
+      transform: translateX(-20.5rem);
+    }
+
+    &-TxtBox-Title {
+      font-size: 4rem;
+    }
+  }
+}
